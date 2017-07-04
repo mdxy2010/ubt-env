@@ -18,12 +18,13 @@ install_depends_tools() {
 config_bashrc() {
 
 	echo "================== start config bashrc ========================"
-	if [ ! -f "bashrc_patch" ] ;then
+	if [ ! -f "bashrc_patch.sh" ] ;then
 		echo "bashrc_patch do not exsit,Please check"
 		exit 2
 	else
 		cat ./bashrc_patch.sh >> ~/.bashrc
 	fi
+	source ~/.bashrc
 	echo "================== end  config bashrc ========================"
 }
 
@@ -37,8 +38,8 @@ install_vim_env() {
 	echo "================== end   install vim env ====================="
 }
 
-install_depends_tools
-check_err "install_depends_tools failed"
+#install_depends_tools
+#check_err "install_depends_tools failed"
 
 config_bashrc 
 check_err "config .bashrc failed"
