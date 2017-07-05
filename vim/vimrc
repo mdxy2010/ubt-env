@@ -57,6 +57,9 @@ set fileformat=unix
 set background=dark
 set cscopequickfix=s-,c-,d-,i-,t-,e-
 
+let Tlist_Ctags_Cmd="~/.vim/ctags"
+let Tlist_Show_One_File=1
+let Tlist_Exit_OnlyWindow=1
 "colorscheme vividchalk
 "colorscheme solarized
 
