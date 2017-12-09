@@ -38,11 +38,11 @@ install_vim_env() {
 	echo "================== end   install vim env ====================="
 }
 
-#install_depends_tools
-#check_err "install_depends_tools failed"
+install_depends_tools
+check_err "install_depends_tools failed"
 
-config_bashrc 
-check_err "config .bashrc failed"
+#config_bashrc
+#check_err "config .bashrc failed"
 
 install_vim_env
 check_err "install vim env failed"
